@@ -11,7 +11,8 @@ export default {
         whiteColor : "#fdfffe",
         darkColor : "#212129",
         grayColor : "#7d7f7e",
-        easyGrayColor : "#f1f1f1"
+        easyGrayColor : "#f1f1f1",
+        darkEndFooterColor : "#17171f",
       }
     },
   },

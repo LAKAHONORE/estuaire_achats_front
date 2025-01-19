@@ -1,8 +1,13 @@
 
 export default function Hero() {
   return (
-    <section className="flex h-[800px] w-full" style={{backgroundImage:'url("assets/gifs/estuaire_achat2.gif")'}}> 
+      <section className="md:h-[750px] h-[250px] w-full bg-grayColor">
 
-    </section>
+        <div className="md:h-[750px] h-[250px] w-full">
+          <img src="assets/gifs/estuaire_achat2.gif" className="h-full w-full">
+
+          </img>
+        </div>
+      </section>
   )
 }
