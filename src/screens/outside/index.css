@@ -1,0 +1,29 @@
+.group{
+  border: 1px solid #e5e7eb ;
+}
+.group:hover{
+  animation: formationBorder .2s ease-out forwards;
+} 
+
+
+
+@keyframes formationBorder {
+  0%{
+    border-left: 3px solid #d52d2a;
+
+  }
+  50%{
+    border-left: 3px solid #d52d2a;
+    border-top: 3px solid #d52d2a ;
+    border-bottom: 3px solid #d52d2a ;
+
+  }
+  100%{
+    border-left: 3px solid #d52d2a;
+    border-top: 3px solid #d52d2a ;
+    border-bottom: 3px solid #d52d2a ;
+    border-right: 3px solid #d52d2a;
+
+  }
+
+}

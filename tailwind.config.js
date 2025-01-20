@@ -13,7 +13,11 @@ export default {
         grayColor : "#7d7f7e",
         easyGrayColor : "#f1f1f1",
         darkEndFooterColor : "#17171f",
-      }
+      },
+
+      boxShadow: {
+        'inner-thick': 'inset 0px -10px 8px rgba(0, 0, 0, 0.2)', // Ajuste les valeurs selon tes besoins
+      },
     },
   },
   plugins: [],

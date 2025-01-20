@@ -7,7 +7,7 @@ export default function LeftAnimation() {
   return (
     <>
       <div className="hidden md:block">
-        <div className="fixed z-40 mx-2 md:mx-16 translate-y-52">
+        <div className="fixed z-40 mx-2 md:mx-4 translate-y-52">
 
           <Link to={'..'} className="fixed w-12 h-12 overflow-hidden rounded-full hover:w-44 group duration-300 origin-left bg-redColor cursor-pointer">
             <span className="absolute w-12 h-12 flex justify-center items-center opacity-100 group-hover:opacity-0 duration-200">
@@ -67,7 +67,7 @@ export default function LeftAnimation() {
       </div>
 
 
-      <div className={`fixed md:hidden z-40 mx-2 md:mx-16 translate-y-52 ${showFloatBtn ? 'opacity-100' : 'opacity-0'} origin-left duration-300`}>
+      <div className={`fixed md:hidden z-40 mx-2 md:mx-4 translate-y-52 ${showFloatBtn ? 'opacity-100' : 'opacity-0'} origin-left duration-300`}>
 
         <Link to={'..'} className="fixed w-12 h-12 overflow-hidden rounded-full hover:w-44 group duration-300 origin-left bg-redColor cursor-pointer">
           <span className="absolute w-12 h-12 flex justify-center items-center opacity-100 group-hover:opacity-0 duration-200">
