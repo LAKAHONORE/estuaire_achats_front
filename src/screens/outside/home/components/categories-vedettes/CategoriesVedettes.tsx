@@ -7,7 +7,7 @@ export default function CategoriesVedettes() {
 
 
   return (
-    <div className="flex flex-col w-full my-20">
+    <div className="flex flex-col w-full gap-6 my-20">
       <TitleSection title="Catégories en vedette" />
 
       <XlScreen />

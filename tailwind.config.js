@@ -13,6 +13,7 @@ export default {
         grayColor : "#7d7f7e",
         easyGrayColor : "#f1f1f1",
         darkEndFooterColor : "#17171f",
+        blueColor : "#3880ba",
       },
 
       boxShadow: {
@@ -20,6 +21,8 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }
 

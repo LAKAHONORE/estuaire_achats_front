@@ -2,7 +2,7 @@
   border: 1px solid #e5e7eb ;
 }
 .group:hover{
-  animation: formationBorder .2s ease-out forwards;
+  animation: formationBorder 1s ease-out forwards ;
 } 
 
 
