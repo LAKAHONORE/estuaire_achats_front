@@ -82,13 +82,13 @@ export default function TopBar() {
         </div>
 
         <div className="flex flex-row justify-center items-center gap-3">
-          <Link to={'..'} className="text-sm">
+          <Link to={'/shops/create'} className="text-sm">
             Become a Seller
           </Link>
 
           <div className="border-[1px] h-[20px] border-grayColor " />
 
-          <Link to={'..'} className="text-sm">
+          <Link to={'/seller/login'} className="text-sm">
             Login to Seller
           </Link>
         </div>

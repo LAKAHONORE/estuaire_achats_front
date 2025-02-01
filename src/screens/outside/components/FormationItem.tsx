@@ -31,7 +31,7 @@ export default function FormationItem({img} : Props) {
 
       </div>
 
-      <div className="hidden group-hover:flex justify-center items-center animate__animated animate__slideInLeft duration-50 w-full">
+      <div className="hidden group-hover:flex justify-center items-center animate__animated animate__slideInLeft duration-300 w-full">
         <Link to={'..'} className="bg-darkColor text-white py-2 px-4 ">
           <span >Ajouter au panier</span>
           {/* <span className="hidden"> <CartFill className="text-2xl text-whiteColor" /></span> */}

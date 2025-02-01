@@ -4,7 +4,7 @@ type Props = {
 }
 export default function TitleSection({title} : Props) {
   return (
-    <div className="flex justify-start items-start w-full px-4 md:px-16">
+    <div className="flex justify-start items-start w-full">
         <h2 className="text-sm md:text-2xl text-black font-semibold">
           {title}
         </h2>

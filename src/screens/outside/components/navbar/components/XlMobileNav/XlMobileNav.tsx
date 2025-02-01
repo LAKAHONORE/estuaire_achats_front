@@ -1,8 +1,13 @@
 import { ArrowLeftRight, BellFill, CartFill, ChevronDown, HeartFill, Person } from "react-bootstrap-icons";
 import { Link, NavLink } from "react-router-dom";
 import SearchBar from "../searchbar/SearchBar";
+import { useState } from "react";
 
 export default function XlMobileNav() {
+
+  const [firstFilter, setFirstFilter] = useState(false);
+
+
   return (
     <nav className="hidden md:flex flex-col h-32 w-full top-8 overflow-hidden">
       <div className="flex flex-row h-20 justify-between items-center gap-4 px-16">
@@ -39,13 +44,13 @@ export default function XlMobileNav() {
             <Person />
           </div>
 
-          <Link to={'..'} className="text-sm hover:text-redColor transition">
+          <Link to={'/user/login'} className="text-sm hover:text-redColor transition">
             Login
           </Link>
 
           <div className="border-[1px] h-[20px] border-grayColor " />
 
-          <Link to={'..'} className="text-sm hover:text-redColor transition">
+          <Link to={'/user/registration'} className="text-sm hover:text-redColor transition">
             Registration
           </Link>
         </div>
@@ -54,13 +59,16 @@ export default function XlMobileNav() {
 
       <div className="flex flex-row h-12 w-full justify-center lg:justify-between items-center bg-redColor gap-2 px-16">
         <div className="flex h-full gap-12">
-          <div className="hidden lg:flex flex-row items-center gap-6 text-whiteColor cursor-pointer bg-red-700 px-4">
+
+          <div className="hidden lg:flex flex-row items-center h-full gap-6 text-whiteColor cursor-pointer bg-red-700 px-4" onClick={() => setFirstFilter(!firstFilter)}>
             <span className="font-semibold">Categories</span>
             <Link to={'..'} className="hover:opacity-60 transition">
               (See All)
             </Link>
-            <ChevronDown />
+            <ChevronDown className={`duration-300 ${firstFilter ? 'rotate-180' : ''}`} />
+
           </div>
+
 
           <div className="flex flex-row  justify-center items-center gap-3">
             <Link to={'..'} className="flex justify-center items-center px-4 lg:px-6 h-full text-whiteColor capitalize font-semibold text-sm hover:bg-red-700 transition">
@@ -70,34 +78,41 @@ export default function XlMobileNav() {
             </Link>
 
 
-            <Link to={'..'} className="flex justify-center items-center px-4 lg:px-6 h-full text-whiteColor capitalize font-semibold text-sm hover:bg-red-700 transition">
+            <Link to={'/flash-deals'} className="flex justify-center items-center px-4 lg:px-6 h-full text-whiteColor capitalize font-semibold text-sm hover:bg-red-700 transition">
               <div>
                 flash sale
               </div>
             </Link>
 
-            <Link to={'..'} className="flex justify-center items-center px-4 lg:px-6 h-full text-whiteColor capitalize font-semibold text-sm hover:bg-red-700 transition">
+
+            <Link to={'/blog'} className="flex justify-center items-center px-4 lg:px-6 h-full text-whiteColor capitalize font-semibold text-sm hover:bg-red-700 transition">
+              <div>
+                Blog
+              </div>
+            </Link>
+
+            <Link to={'/brands'} className="flex justify-center items-center px-4 lg:px-6 h-full text-whiteColor capitalize font-semibold text-sm hover:bg-red-700 transition">
               <div>
                 all brands
               </div>
             </Link>
 
 
-            <Link to={'..'} className="flex justify-center items-center px-4 lg:px-6 h-full text-whiteColor capitalize font-semibold text-sm hover:bg-red-700 transition">
+            <Link to={'/categories'} className="flex justify-center items-center px-4 lg:px-6 h-full text-whiteColor capitalize font-semibold text-sm hover:bg-red-700 transition">
               <div>
                 all categories
               </div>
             </Link>
 
 
-            <Link to={'..'} className="flex justify-center items-center px-4 lg:px-6 h-full text-whiteColor capitalize font-semibold text-sm hover:bg-red-700 transition">
+            <Link to={'/TradeAnsurance'} className="flex justify-center items-center px-4 lg:px-6 h-full text-whiteColor capitalize font-semibold text-sm hover:bg-red-700 transition">
               <div>
                 trade ansurance
               </div>
             </Link>
 
 
-            <Link to={'..'} className="flex justify-center items-center px-4 lg:px-6 h-full text-whiteColor capitalize font-semibold text-sm hover:bg-red-700 transition">
+            <Link to={'/devisgratuit'} className="flex justify-center items-center px-4 lg:px-6 h-full text-whiteColor capitalize font-semibold text-sm hover:bg-red-700 transition">
               <div>
                 free quote
               </div>
@@ -115,7 +130,10 @@ export default function XlMobileNav() {
         </div>
       </div>
 
+
+
+
     </nav>
-    
+
   )
 }

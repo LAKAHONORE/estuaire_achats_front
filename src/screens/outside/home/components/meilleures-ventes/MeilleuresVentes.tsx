@@ -23,7 +23,7 @@ export default function MeilleuresVentes() {
 
   return (
 
-    <div className="flex flex-col px-4 lg:px-48">
+    <div className="flex flex-col px-4 lg:px-10">
 
       <div className="flex flex-row justify-end items-center gap-6 text-grayColor cursor-pointer ">
         <ChevronLeft className="hover:text-darkColor transition hover:scale-105 duration-300" onClick={slideLeftTwo}/>

@@ -21,7 +21,7 @@ export default function BestSellers() {
     }
   };
   return (
-    <div className="flex flex-col my-16 px-4 my-8 lg:px-48">
+    <div className="flex flex-col my-16 px-4 lg:px-10">
 
       <div className="flex flex-row justify-between items-center gap-6 text-grayColor cursor-pointer ">
         <TitleSection title="Meilleurs ventes"/>

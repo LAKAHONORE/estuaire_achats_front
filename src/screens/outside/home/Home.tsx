@@ -6,11 +6,13 @@ import LinksVedettes from "./components/links-vedettes/LinksVedettes";
 import MeilleuresMarques from "./components/meilleures-marques/MeilleuresMarques";
 import MeilleuresVentes from "./components/meilleures-ventes/MeilleuresVentes";
 import NouveauxProduits from "./components/nouveaux-produits/NouveauxProduits";
+import SubHero from "./components/sub-hero/SubHero";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <SubHero />
       <CategoriesVedettes />
       <LinksVedettes />
       <MeilleuresVentes />

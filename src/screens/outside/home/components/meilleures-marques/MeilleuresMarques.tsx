@@ -37,7 +37,7 @@ export default function MeilleuresMarques() {
 
     // </div>
 
-    <div className="flex flex-col w-full gap-12 h-auto px-6 md:px-48 py-16 my-16">
+    <div className="flex flex-col w-full gap-12 h-auto px-6 md:px-10 py-16 my-16">
 
       <div className="flex flex-row justify-between w-full items-center gap-6 text-grayColor cursor-pointer ">
         <TitleSection title="Meilleures marques" />
@@ -59,7 +59,7 @@ export default function MeilleuresMarques() {
           <MarqueItem nom="adidas" lien=".." img="assets/marques/adidas.webp" />
           <MarqueItem nom="acer" lien=".." img="assets/marques/acer.webp" />
           <MarqueItem nom="lenovo" lien=".." img="assets/marques/lenovo.webp" />
-          <MarqueItem nom="" lien=".." img="assets/marques/louis vuiton.webp" />
+          <MarqueItem nom="louis vuiton" lien=".." img="assets/marques/louis vuiton.webp" />
           <MarqueItem nom="huawei" lien=".." img="assets/marques/huawei.webp" />
           <MarqueItem nom="or" lien=".." img="assets/marques/or.webp" />
           <MarqueItem nom="dove" lien=".." img="assets/marques/dove.webp" />

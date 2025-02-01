@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function XlScreen() {
   return (
-    <div className="hidden md:flex flex-col justify-center items-center w-full">
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 w-full bg-gray-200 px-16 lg:px-48 gap-8 py-6 my-8">
+    <div className="hidden md:flex flex-col justify-center items-center w-full px-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 w-full bg-gray-200 px-16 lg:px-10 gap-8 py-6 my-8">
         <Link to={'..'}  className="overflow-hidden">
           <div className="relative h-[450px] w-[450px] hover:scale-105 duration-300">
             <div className="absolute inset-0" />
@@ -27,7 +27,7 @@ export default function XlScreen() {
       </div>
 
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 w-full px-16 lg:px-48 gap-8 py-6 my-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 w-full px-16 lg:px-10 gap-8 py-6 my-8">
         <Link to={'..'} className="overflow-hidden">
           <div className="relative h-[450px] w-[450px] hover:scale-105 duration-300">
           <div className="absolute inset-0" />
