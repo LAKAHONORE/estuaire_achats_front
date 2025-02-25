@@ -74,13 +74,13 @@ export default function AllCategories() {
       <PagesPath title="Toutes catégories" />
 
 
-      <CategorieItem img="assets/img/categorie.jpeg" title="PRODUITS COSMETIQUES" titleLink=".." elements={elementsCosmetiques} />
+      <CategorieItem img="assets/img/categorie.jpeg" title="PRODUITS COSMETIQUES" titleLink="/category/cosmetique" elements={elementsCosmetiques} />
 
-      <CategorieItem img="assets/img/links4.jpg" title="HYGIENE ET SANTE" titleLink=".." />
+      <CategorieItem img="assets/img/links4.jpg" title="HYGIENE ET SANTE" titleLink="/category/hygiene-sante" />
 
-      <CategorieItem img="assets/img/technology.jpeg" title="FORMATIONS" titleLink=".." elements={elementsFormations} />
+      <CategorieItem img="assets/img/technology.jpeg" title="FORMATIONS" titleLink="/category/formations" elements={elementsFormations} />
 
-      <CategorieItem img="assets/img/produit.png" title="alimentation" titleLink=".." />
+      <CategorieItem img="assets/img/produit.png" title="alimentation" titleLink="/category/alimentaion" />
 
 
 

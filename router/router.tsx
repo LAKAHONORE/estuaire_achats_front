@@ -10,6 +10,7 @@ import Blog from "../src/screens/outside/blog/Blog";
 import Brands from "../src/screens/outside/brands/Brands";
 import NotFound from "../src/screens/404/NotFound";
 import AllCategories from "../src/screens/outside/all-categories/AllCategories";
+import DetailsCategorie from "../src/screens/outside/details-categorie/DetailsCategorie";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/categories",
         element: <AllCategories />
+      },
+      {
+        path: "/category/:slug",
+        element: <DetailsCategorie />
       },
     ]
   },

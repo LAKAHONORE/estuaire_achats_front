@@ -5,7 +5,17 @@
   animation: formationBorder 1s ease-out forwards ;
 } 
 
+.cartBtn:hover .text{
+  display: none;
+}
 
+.cartBtn:hover .cart{
+  display: block;
+}
+
+.cart{
+  display: none;
+}
 
 @keyframes formationBorder {
   0%{

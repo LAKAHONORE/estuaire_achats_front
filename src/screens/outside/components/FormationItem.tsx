@@ -1,18 +1,28 @@
-import { ArrowLeftRight, Heart } from "react-bootstrap-icons";
+import { ArrowLeftRight, CartFill, Heart } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 import '../index.css'
 import 'animate.css'
 
 type Props = {
-  img : string
+  img: string
 }
-export default function FormationItem({img} : Props) {
+export default function FormationItem({ img }: Props) {
   return (
     <div className="flex flex-col justify-center items-center gap-6 px-4 py-6 h-auto w-[250px] overflow-hidden group">
       <div className="relative">
 
-        <Link to={'..'} className="overflow-hidden">
-          <img src={img} className="hover:scale-105 duration-300" alt="" />
+        <Link to={'..'} className="relative overflow-hidden">
+          <img src={img} className="" alt="" />
+
+
+          <div className="absolute hidden group-hover:flex bottom-0 animate__animated animate__slideInUp duration-300 w-full">
+            <Link to={'..'} className="bg-darkColor w-full flex justify-center items-center bg-opacity-80 hover:bg-opacity-100 text-white py-2 px-4 cursor-pointer cartBtn overflow-hidden">
+              <span className="text animate__animated animate__slideInDown duration-75">Ajouter au panier</span>
+              <span className="cart animate__animated animate__slideInUp duration-75"> <CartFill className="text-2xl text-whiteColor" /></span>
+            </Link>
+          </div>
+
+
         </Link>
 
         <div className="absolute top-0 bg-redColor text-easyGrayColor text-[13px] font-semibold">
@@ -20,23 +30,20 @@ export default function FormationItem({img} : Props) {
         </div>
 
         <div className="hidden group-hover:block absolute right-0 top-0 animate__animated animate__slideInRight duration-700">
-          <Link to={'..'} className="block p-2 rounded-md bg-grayColor text-white m-4">
+          <Link to={'..'} className="block p-1 rounded-md bg-grayColor text-white m-4">
             <Heart />
           </Link>
 
-          <Link to={'..'} className="block p-2 rounded-md bg-grayColor text-white m-4">
+          <Link to={'..'} className="block p-1 rounded-md bg-grayColor text-white m-4">
             <ArrowLeftRight />
           </Link>
         </div>
 
+
+
       </div>
 
-      <div className="hidden group-hover:flex justify-center items-center animate__animated animate__slideInLeft duration-300 w-full">
-        <Link to={'..'} className="bg-darkColor text-white py-2 px-4 ">
-          <span >Ajouter au panier</span>
-          {/* <span className="hidden"> <CartFill className="text-2xl text-whiteColor" /></span> */}
-        </Link>
-      </div>
+
 
 
       <div className="flex justify-center items-center w-full">
